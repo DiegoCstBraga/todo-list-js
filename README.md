@@ -12,4 +12,4 @@ A To Do List website focused for users who wants a minimalist interface
 
 ## 🚀 Getting started
 
-Access the website at
+Access the website at [https://diegocstbraga.github.io/todo-list-js/]
