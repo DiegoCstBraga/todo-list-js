@@ -74,7 +74,7 @@ input, input:focus {
 }
 
 .main-container {
-  min-width: 80vw;
+  width: 100%;
   max-width: 50rem;
 
   flex: 1;
@@ -82,11 +82,13 @@ input, input:focus {
 
 .taskInput-container{
   padding: 0 1rem 1rem;
-  width: 50%;
+  width: 100%;
+  max-width: 50rem;
 
   display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 
 }
@@ -109,7 +111,8 @@ input, input:focus {
 #taskList {
   padding: 1rem 0;
   /* background: var(--light-taskList-bg); */
-  width: 50%;
+  width: 90%;
+  max-width: 50rem;
 
   flex: 1;
 
@@ -154,4 +157,26 @@ input, input:focus {
   text-align: justify;
   word-break: break-word;
   
+}
+
+footer p {
+  text-align: center;
+}
+
+@media (max-width: 1080px){
+  .web-page-container{
+    padding: 1rem 0;
+  }
+
+  .taskInput-container{
+    gap: 0.5rem;
+  }
+
+  #taskList{
+    padding: 0;
+  }
+
+  .taskSection{
+    padding: 0.5rem;
+  }
 }
