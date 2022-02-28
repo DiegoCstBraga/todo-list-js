@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #00ff00;
+  --light-background-color: #f0f0f0;
+  --light-taskList-bg: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* MATERIAL ICON STYLES */
+
+.material-icons.md-size {font-size: 24px;}
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.web-page-container {
+  background: var(--light-background-color);
+  height: 100vh;
+  padding: 2rem;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  gap: 2rem
+
+}
+
+h1 {
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+button {
+  padding: 0.25rem;
+  background: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  cursor: pointer;
+}
+
+input, input:focus {
+  padding: 0.25rem;
+  border: black solid 1px;
+  outline: none;
+
+  font-size: 1rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  min-width: 80vw;
+  max-width: 50rem;
+
+  flex: 1;
+}
+
+.taskInput-container{
+  padding: 0 1rem 1rem;
+  width: 50%;
+
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 1rem;
+
+}
+
+.taskInput-container input{
+  flex: 1;
+}
+
+.buttons-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+}
+
+.inputButtons {
+  font-size: 1.25rem;
+  border: black solid 1px;
+}
+
+#taskList {
+  padding: 1rem 0;
+  /* background: var(--light-taskList-bg); */
+  width: 50%;
+
+  flex: 1;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.date {
+  width: 100%;
+  padding-right: 0.5rem;
+
+  display: flex;
+  flex-direction: row-reverse;
+
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.taskSection {
+  width: 100%;
+  padding: 0.75rem;
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  
+  border-bottom: black solid 1px;
+  border-left: none;
+  border-right: none;
+ 
+}
+
+.baseText {
+  flex: 1;
+
+  font-size: 1.25rem;
+  text-align: justify;
+  word-break: break-word;
+  
+}
